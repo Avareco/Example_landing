@@ -26,28 +26,33 @@
 		margin-top: 132px;
 		display: flex;
 		justify-content: center;
-		& video{
-			
+		
+		& video {
+			object-fit: inherit;
+			filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
+		
+			border-radius: 44.8123px;
+		
+		
 		}
-	
 	}
-	&__button{
+	&__button {
 		position: absolute;
 		width: 187.4px;
-height: 187.4px;
-background: #2091F9;
-top: 35%;
-border-radius: 50%;
+		height: 187.4px;
+		background: #2091f9;
+		top: 35%;
+		border-radius: 50%;
 
-& div{
-	width: 46.85px;
-height: 46.85px;
-background-color: #fff;
-clip-path: polygon(0 0, 0 100%, 100% 50%);
-position: relative;
-top: 38%;
-left: 40%;
-}
+		& div {
+			width: 46.85px;
+			height: 46.85px;
+			background-color: #fff;
+			clip-path: polygon(0 0, 0 100%, 100% 50%);
+			position: relative;
+			top: 38%;
+			left: 40%;
+		}
 	}
 }
 .features-content {
@@ -60,6 +65,7 @@ left: 40%;
 		text-align: center;
 		padding: 0 12px;
 		margin-right: 52px;
+		
 		&:last-child {
 			margin-right: 0;
 		}
@@ -84,6 +90,27 @@ left: 40%;
 		color: #374754;
 	}
 }
+@media (max-width: 1120px) {
+	.features {
+		&__video {
+			& video {
+			
+				width: 385px;
+				height: 215px;
+				border-radius: 14.6877px;
+			}
+		}
+		&__button {
+			width: 61.42px;
+			height: 61.42px;
+
+			& div {
+				width: 15.36px;
+				height: 15.36px;
+			}
+		}
+	}
+}
 @media (max-width: 991px) {
 	.features {
 		margin-top: 90px;
@@ -92,9 +119,13 @@ left: 40%;
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
+			&>div:first-child{
+					width: 100%; 
+			}
 		}
 
 		&__headline {
+		
 		}
 
 		&__text {
@@ -104,11 +135,8 @@ left: 40%;
 		}
 
 		&__video {
-			
 			order: 2;
 			margin-top: 50px;
-			
-		
 		}
 	}
 	.features-content {
@@ -117,7 +145,7 @@ left: 40%;
 		margin-top: 0;
 		&__item {
 			margin-top: 75px;
-			max-width: 400px;
+			max-width: 231px;
 			padding: 0;
 			margin-right: 0;
 		}
@@ -129,7 +157,7 @@ left: 40%;
 		}
 
 		&__text {
-			padding-left: 10px;
+			padding-left: 20px;
 		}
 	}
 }
@@ -139,6 +167,7 @@ left: 40%;
 		}
 
 		&__headline {
+			padding: 11px 0px;
 		}
 
 		&__text {
@@ -149,7 +178,7 @@ left: 40%;
 	}
 	.features-content {
 		&__item {
-			max-width: 231px;
+			
 		}
 
 		&__img {

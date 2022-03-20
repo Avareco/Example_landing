@@ -1,4 +1,4 @@
-.display-none{
+.display-none {
 	display: none;
 }
 .intro {
@@ -32,7 +32,7 @@
 		margin-top: 90px;
 		margin-bottom: 284px;
 		border: none;
-		&:hover{
+		&:hover {
 			background: white;
 			color: #2091f9;
 			transition: 0.3s;
@@ -59,12 +59,21 @@
 		}
 
 		&__headline {
+			font-weight: 400;
+			font-size: 48px;
+			line-height: 55px;
+			padding:0 20px ;
 		}
 
 		&__text {
+			font-weight: 400;
+			font-size: 28px;
+			line-height: 40px;
+			padding:0 20px ;
 		}
 
 		&__button {
+
 		}
 
 		&__block {
