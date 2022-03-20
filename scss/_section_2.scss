@@ -1,0 +1,166 @@
+.features {
+	&__box {
+		margin-top: 111px;
+	}
+
+	&__headline {
+		font-size: 48px;
+		line-height: 55px;
+		color: #252b42;
+		text-align: center;
+	}
+
+	&__text {
+		text-align: center;
+		font-size: 28px;
+		line-height: 40px;
+		color: #374754;
+		margin: 0 auto;
+		max-width: 552px;
+		padding: 10px;
+		margin-top: 7px;
+	}
+
+	&__video {
+		position: relative;
+		margin-top: 132px;
+		display: flex;
+		justify-content: center;
+		& video{
+			
+		}
+	
+	}
+	&__button{
+		position: absolute;
+		width: 187.4px;
+height: 187.4px;
+background: #2091F9;
+top: 35%;
+border-radius: 50%;
+
+& div{
+	width: 46.85px;
+height: 46.85px;
+background-color: #fff;
+clip-path: polygon(0 0, 0 100%, 100% 50%);
+position: relative;
+top: 38%;
+left: 40%;
+}
+	}
+}
+.features-content {
+	max-width: 869px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 80px;
+	&__item {
+		text-align: center;
+		padding: 0 12px;
+		margin-right: 52px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__img {
+	}
+
+	&__headline {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 28px;
+		color: #252b42;
+		padding: 20px 0px;
+	}
+
+	&__text {
+		text-align: center;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 25px;
+		color: #374754;
+	}
+}
+@media (max-width: 991px) {
+	.features {
+		margin-top: 90px;
+
+		&__box {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		&__headline {
+		}
+
+		&__text {
+			& p {
+				display: none;
+			}
+		}
+
+		&__video {
+			
+			order: 2;
+			margin-top: 50px;
+			
+		
+		}
+	}
+	.features-content {
+		flex-wrap: wrap;
+		order: 3;
+		margin-top: 0;
+		&__item {
+			margin-top: 75px;
+			max-width: 400px;
+			padding: 0;
+			margin-right: 0;
+		}
+
+		&__img {
+		}
+
+		&__headline {
+		}
+
+		&__text {
+			padding-left: 10px;
+		}
+	}
+}
+@media (max-width: 414px) {
+	.features {
+		&__box {
+		}
+
+		&__headline {
+		}
+
+		&__text {
+		}
+
+		&__video {
+		}
+	}
+	.features-content {
+		&__item {
+			max-width: 231px;
+		}
+
+		&__img {
+		}
+
+		&__headline {
+			margin-top: 17px;
+		}
+
+		&__text {
+			margin-top: 20px;
+		}
+	}
+}
