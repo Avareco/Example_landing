@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.contact {
+	padding-bottom: 102px;
+	&__headline {
+		text-align: center;
+		margin-top: 143px;
+	}
+
+	&__text {
+		text-align: center;
+		max-width: 532px;
+		margin: 0 auto;
+		margin-top: 30px;
+		margin-bottom: 70px;
+	}
+
+	&__box {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__form {
+		width: 453px;
+		border: 1px solid #dddddd;
+		box-sizing: border-box;
+		box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+		border-radius: 20px;
+		& h3 {
+			margin-top: 52px;
+		}
+		& div {
+			max-width: 352px;
+			margin: 0 auto;
+		}
+		& input[type="text"],
+		input[type="email"],
+		textarea {
+			font-family: "Roboto";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 16px;
+			/* identical to box height, or 107% */
+
+			letter-spacing: 0.1px;
+
+			margin-top: 45px;
+
+			color: #18171d;
+			width: 95%;
+			padding: 19px 0px 19px 20px;
+			background: #f5f5f5;
+			border: 1px solid #e8e8e8;
+		}
+		& input[type="text"],
+		input[type="email"] {
+			border-radius: 39px;
+		}
+		& button {
+			margin-top: 45px;
+			padding: 18px 48px;
+			background: #2091f9;
+			border-radius: 35px;
+			color: #fff;
+		}
+	}
+}
+.contact-contacts {
+	margin-left: 60px;
+	&__head {
+		max-width: 339px;
+	}
+
+	&__item {
+		font-family: "Graphik";
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 23px;
+		/* or 144% */
+
+		letter-spacing: 0.1px;
+
+		/* second text */
+
+		color: #374754;
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		& span {
+			margin-left: 20px;
+		}
+		& img[alt="mobile"] {
+			padding: 0 3px;
+		}
+	}
+
+	&__cart {
+	}
+
+	&__social {
+		margin-top: 30px;
+		& img {
+			margin-right: 32px;
+		}
+	}
+}
+@media (max-width: 830px) {
+	.contact-contacts{
+		margin-left: 0;
+	}
+}
+@media (max-width: 991px) {
+	.contact {
+
+		&__headline {
+		}
+
+		&__text {
+		}
+
+		&__box {
+			flex-wrap: wrap;
+		}
+
+		&__form {
+			min-width: 378px;
+			margin: 0 20px;
+			& button{
+				margin-bottom: 52px;
+			}
+		}
+}
+.contact-contacts {
+margin-top: 52px;
+
+		&__head {
+		}
+
+		&__item {
+		}
+
+		&__cart {
+			margin-top: 44px;
+			width: 346px;
+			height: 249px;
+		}
+
+		&__social {
+			text-align: center;
+		}
+}
+
+}
+@media (max-width: 415px) {
+	
+}
+
