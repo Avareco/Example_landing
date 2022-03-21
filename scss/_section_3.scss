@@ -1,0 +1,68 @@
+.activity {
+	margin-top: 269px;
+	display: flex;
+	justify-content: center;
+	&__info {
+		max-width: 532px;
+		margin-right: 50px;
+		padding-left: 15px;
+	}
+
+	&__headline {
+		max-width: 335px;
+		color: #252b42;
+	}
+
+	&__text {
+		color: #374754;
+		margin-top: 17px;
+	}
+
+	&__button {
+		margin-top: 70px;
+		color: white;
+		background: #2091f9;
+		border-radius: 35px;
+		& h4 {
+			padding: 16px 60px;
+		}
+		&:hover {
+			background-color: #000;
+			transition: 0.2s;
+		}
+	}
+
+	&__laptop {
+	}
+}
+@media (max-width: 991px) {
+	.activity {
+		flex-wrap: wrap;
+		&__info {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			margin-right: 0;
+			padding: 0;
+		}
+
+		&__headline {
+			text-align: center;
+		}
+
+		&__text {
+			text-align: center;
+		}
+
+		&__button {
+		}
+
+		&__laptop {
+			margin-top: 65px;
+			& img {
+				width: 328px;
+				height: 211px;
+			}
+		}
+	}
+}
