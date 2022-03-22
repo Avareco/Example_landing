@@ -3,19 +3,12 @@ const videoBlock = document.querySelector('#video');
 const play = document.querySelector('#play-button');
 const mediaQuery = window.matchMedia('(min-width: 991px)')
 const navBar = document.querySelector('#nav-bar');
-
 const burger = document.querySelector(".header-menu__btn");
-
 const menu = document.querySelector(".header-menu__box");
 const menuItem = document.querySelector(".header-menu__box")
 const body = document.querySelector("body")
-burger.addEventListener("click", e => {
-	menu.classList.toggle('active')
-	burger.classList.toggle('active')
-	body.classList.toggle('lock')
-})
 
-menuItem.addEventListener('click',e=>{
+burger.addEventListener("click", e => {
 	menu.classList.toggle('active')
 	burger.classList.toggle('active')
 	body.classList.toggle('lock')
