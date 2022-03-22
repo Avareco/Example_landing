@@ -20,25 +20,24 @@ menuItem.addEventListener("click", e => {
 })
 
 function handleTabletChange(e) {
-	if (!e.matches) {
-		video.setAttribute('poster', 'img/screen-mobile.jpg')
+
+	video.setAttribute('poster', 'img/screen-mobile.jpg')
 
 
-		let prevScrollpos = window.pageYOffset;
+	let prevScrollpos = window.pageYOffset;
 
-		navBar.style.position = "fixed"
-		window.onscroll = function () {
-			var currentScrollPos = window.pageYOffset;
-			if (!body.classList.contains("lock")) {
-				if (prevScrollpos > currentScrollPos) {
-					navBar.style.top = "0";
-				} else {
-					navBar.style.top = "-100%";
-					navBar.style.backgroundColor = "#333"
-				}
-				prevScrollpos = currentScrollPos;
-			}
+	navBar.style.position = "fixed"
+	window.onscroll = function () {
+		var currentScrollPos = window.pageYOffset;
+
+		if (prevScrollpos > currentScrollPos) {
+			navBar.style.top = "0";
+		} else {
+			navBar.style.top = "-100%";
+			navBar.style.backgroundColor = "#333"
 		}
+		prevScrollpos = currentScrollPos;
+
 
 
 	}

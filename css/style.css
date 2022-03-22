@@ -247,7 +247,7 @@ body.lock {
 }
 
 .header {
-  height: 156px;
+  height: 90px;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
