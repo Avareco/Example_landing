@@ -26,14 +26,12 @@
 		margin-top: 132px;
 		display: flex;
 		justify-content: center;
-		
+
 		& video {
 			object-fit: inherit;
 			filter: drop-shadow(0px 8.14769px 63.1446px rgba(0, 0, 0, 0.15));
-		
+
 			border-radius: 44.8123px;
-		
-		
 		}
 	}
 	&__button {
@@ -65,7 +63,7 @@
 		text-align: center;
 		padding: 0 12px;
 		margin-right: 52px;
-		
+
 		&:last-child {
 			margin-right: 0;
 		}
@@ -94,7 +92,6 @@
 	.features {
 		&__video {
 			& video {
-			
 				width: 385px;
 				height: 215px;
 				border-radius: 14.6877px;
@@ -113,19 +110,16 @@
 }
 @media (max-width: 991px) {
 	.features {
-		margin-top: 90px;
-
 		&__box {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-			&>div:first-child{
-					width: 100%; 
+			& > div:first-child {
+				width: 100%;
 			}
 		}
 
 		&__headline {
-		
 		}
 
 		&__text {
@@ -178,7 +172,6 @@
 	}
 	.features-content {
 		&__item {
-			
 		}
 
 		&__img {

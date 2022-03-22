@@ -1,5 +1,5 @@
 .activity {
-	padding-top: 269px;
+	padding-top: 293px;
 	display: flex;
 	justify-content: center;
 	&__info {
@@ -38,6 +38,7 @@
 @media (max-width: 991px) {
 	.activity {
 		flex-wrap: wrap;
+		padding-top: 188px;
 		&__info {
 			display: flex;
 			align-items: center;

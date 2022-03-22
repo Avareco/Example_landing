@@ -633,9 +633,6 @@ body.lock {
 }
 
 @media (max-width: 991px) {
-  .features {
-    margin-top: 90px;
-  }
   .features__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -690,7 +687,7 @@ body.lock {
 }
 
 .activity {
-  padding-top: 269px;
+  padding-top: 293px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,6 +733,7 @@ body.lock {
   .activity {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-top: 188px;
   }
   .activity__info {
     display: -webkit-box;
