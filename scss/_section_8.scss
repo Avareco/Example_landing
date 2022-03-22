@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .contact {
 	padding-bottom: 102px;
@@ -63,6 +63,10 @@
 			background: #2091f9;
 			border-radius: 35px;
 			color: #fff;
+			&:hover {
+				background: #000;
+				transition: 0.2s;
+			}
 		}
 	}
 }
@@ -107,13 +111,12 @@
 	}
 }
 @media (max-width: 830px) {
-	.contact-contacts{
+	.contact-contacts {
 		margin-left: 0;
 	}
 }
 @media (max-width: 991px) {
 	.contact {
-
 		&__headline {
 		}
 
@@ -127,13 +130,13 @@
 		&__form {
 			min-width: 378px;
 			margin: 0 20px;
-			& button{
+			& button {
 				margin-bottom: 52px;
 			}
 		}
-}
-.contact-contacts {
-margin-top: 52px;
+	}
+	.contact-contacts {
+		margin-top: 52px;
 
 		&__head {
 		}
@@ -150,10 +153,7 @@ margin-top: 52px;
 		&__social {
 			text-align: center;
 		}
-}
-
+	}
 }
 @media (max-width: 415px) {
-	
 }
-

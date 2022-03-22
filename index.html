@@ -16,38 +16,38 @@
 				<span></span>
 			</label>
 			<ul class="header-menu__box">
-				<li class="header-menu__item"><a href="">Home</a></li>
-				<li class="header-menu__item"><a href="">Product</a></li>
-				<li class="header-menu__item"><a href="">Pricing</a></li>
-				<li class="header-menu__item"><a href="">About</a></li>
-				<li class="header-menu__item"><a href="">Contact</a></li>
+				<li class="header-menu__item"><a href="#home">Home</a></li>
+				<li class="header-menu__item"><a href="#product">Product</a></li>
+				<li class="header-menu__item"><a href="#pricing">Pricing</a></li>
+				<li class="header-menu__item"><a href="#about">About</a></li>
+				<li class="header-menu__item"><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
-		<img src="img/header/logo.svg" class="header__logo" alt="logo" width="186" height="58"><a href="index.html"></a>
+		<a href="index.html"><img src="img/header/logo.svg" class="header__logo" alt="logo" width="186" height="58"></a>
 		<div class="header-links">
-			<a href="">
-				<img src="img/header/twitter.png" class="header-links__item" alt="twitter" width="32" height="32"></a>
-			<a href="">
-				<img src="img/header/facebook.png" class="header-links__item" alt="facebook" width="32" height="32"></a>
-			<a href="">
-				<img src="img/header/linkedin.png" class="header-links__item" alt="linkedin" width="32" height="32"></a>
+			<a class="header-links__item" target="blank" href="https://twitter.com">
+				<img src="img/header/twitter.svg" alt="twitter" width="32" height="32"></a>
+			<a class="header-links__item" target="blank" href="https://facebook.com">
+				<img src="img/header/facebook.svg" alt="facebook" width="32" height="32"></a>
+			<a class="header-links__item" target="blank" href="https://linkedin.com">
+				<img src="img/header/linkedin.svg" alt="linkedin" width="32" height="32"></a>
 		</div>
 
 	</header>
 	<main class="main">
 		<div class="wrapper">
-			<section class="intro">
+			<section id="home" class="intro">
 				<div class="intro__box">
 					<h1 class="intro__headline">The best products
 						start with Figma</h1>
 					<h4 class="intro__text">Most calendars are designed for teams. Slate is designed
 						for freelancers</h4>
-					<button class="intro__button">Try For Free </button>
+					<a target="blank" href="https://figma.com"> <button class="intro__button">Try For Free </button></a>
 				</div>
 
 
 			</section>
-			<section class="features">
+			<section id="product" class="features">
 				<div class="features__box">
 					<div>
 						<h2 class="features__headline">Features</h2>
@@ -57,7 +57,8 @@
 					</div>
 					<div class="features-content">
 						<div class="features-content__item">
-							<img class="features-content__img" src="img/circle.svg" alt="features-icon" width="46" height="46">
+							<img class="features-content__img" src="img/features/circle.svg" alt="features-icon" width="46"
+								height="46">
 							<h3 class="features-content__headline">OpenType features
 								Variable fonts</h3>
 							<p class="features-content__text">Slate helps you see how
@@ -67,7 +68,8 @@
 						</div>
 
 						<div class="features-content__item">
-							<img class="features-content__img" src="img/pen.svg" alt="features-icon" width="46" height="46">
+							<img class="features-content__img" src="img/features/pen.svg" alt="features-icon" width="46"
+								height="46">
 							<h3 class="features-content__headline">Design with real data</h3>
 							<p class="features-content__text">Slate helps you see how
 								many more days you need
@@ -75,7 +77,8 @@
 								financial goal.</p>
 						</div>
 						<div class="features-content__item">
-							<img class="features-content__img" src="img/brush.svg" alt="features-icon" width="46" height="46">
+							<img class="features-content__img" src="img/features/brush.svg" alt="features-icon" width="46"
+								height="46">
 							<h3 class="features-content__headline">Fastest way to
 								take action</h3>
 							<p class="features-content__text">Slate helps you see how
@@ -100,15 +103,16 @@
 
 			</section>
 
-			<section class="activity">
+			<section id="about" class="activity">
 				<div class="activity__info">
 					<h2 class="activity__headline">Fastest way to
 						organize</h2>
 					<h3 class="activity__text">Most calendars are designed for teams.
 						Slate is designed for freelancers</h3>
-					<button class="activity__button">
-						<h4>Try For Free</h4>
-					</button>
+					<a href="http://figma.com" target="_blank">
+						<button class="activity__button">
+							<h4>Try For Free</h4>
+						</button></a>
 				</div>
 				<div class="activity__laptop">
 					<img src="img/Macbook Pro.jpg" alt="laptop" width="624" height="329">
@@ -161,21 +165,21 @@
 						<div class="partners__item">
 							<h5 class="partners__name">dropbox</h5>
 
-							<img width="229" height="46" src="img/dropbox.png" alt="dropbox">
+							<img width="229" height="46" src="img/partners/dropbox.png" alt="dropbox">
 
 						</div>
 
 						<div class="partners__item">
 							<h5 class="partners__name">google</h5>
 
-							<img width="229" height="46" src="img/google.svg" alt="google">
+							<img width="229" height="46" src="img/partners/google.svg" alt="google">
 
 						</div>
 
 						<div class="partners__item">
 							<h5 class="partners__name">amazon</h5>
 
-							<img width="169" height="46" src="img/amazon.png" alt="amazon">
+							<img width="169" height="46" src="img/partners/amazon.png" alt="amazon">
 
 
 						</div>
@@ -185,32 +189,32 @@
 						<div class="partners__item">
 							<h5 class="partners__name">Microsoft</h5>
 
-							<img width="200" height="46" src="img/Microsoft.png" alt="Microsoft">
+							<img width="200" height="46" src="img/partners/Microsoft.png" alt="Microsoft">
 
 						</div>
 
 						<div class="partners__item">
-							<h5 class="partners__name">google</h5>
+							<h5 class="partners__name">uber</h5>
 
-							<img width="229" height="46" src="img/uber.svg" alt="uber">
+							<img width="103" height="63" src="img/partners/uber.svg" alt="uber">
 
 						</div>
 
 						<div class="partners__item">
 							<h5 class="partners__name">dropbox</h5>
 
-							<img width="229" height="46" src="img/dropbox.png" alt="dropbox">
+							<img width="229" height="46" src="img/partners/dropbox.png" alt="dropbox">
 
 
 						</div>
 					</div>
 				</div>
 
-
-				<button class="partners__button">
-					<h3>Try For Free</h3>
-				</button>
-
+				<a style="text-decoration: none;" href="http://figma.com" target="_blank">
+					<button class="partners__button">
+						<h3>Try For Free</h3>
+					</button>
+				</a>
 
 			</section>
 
@@ -226,13 +230,14 @@
 						<h5>Ui designer</h5>
 					</div>
 				</div>
-				<div class="testimonials__button">
-					<h3>More Testimonials</h3>
-				</div>
-
+				<a style="text-decoration: none;" href="http://google.com" target="_blank">
+					<div class="testimonials__button">
+						<h3>More Testimonials</h3>
+					</div>
+				</a>
 			</section>
 
-			<section class="pricing">
+			<section id="pricing" class="pricing">
 				<h2 class="pricing__headline">Pricing</h2>
 				<h4 class="pricing__text">Most calendars are designed for teams.
 					Slate is designed for freelancers</h4>
@@ -253,7 +258,8 @@
 						<span class="pricing-item__feature">Pricing Feature</span>
 						<span class="pricing-item__feature">Pricing Feature</span>
 						<span class="pricing-item__feature">Pricing Feature</span>
-						<button class="pricing-item__button"> Order Now </button>
+						<a style="text-decoration: none;" href="http://google.com" target="_blank" rel="noopener noreferrer">
+							<button class="pricing-item__button"> Order Now </button></a>
 					</div>
 
 					<div class="pricing-item pricing-item_central">
@@ -272,7 +278,8 @@
 						<span class="pricing-item__feature">Pricing Feature</span>
 						<span class="pricing-item__feature">Pricing Feature</span>
 						<span class="pricing-item__feature">Pricing Feature</span>
-						<button class="pricing-item__button"> Order Now </button>
+						<a style="text-decoration: none;" href="http://google.com" target="_blank"
+							rel="noopener noreferrer"><button class="pricing-item__button"> Order Now </button></a>
 					</div>
 
 					<div class="pricing-item">
@@ -291,14 +298,15 @@
 						<span class="pricing-item__feature">Pricing Feature</span>
 						<span class="pricing-item__feature">Pricing Feature</span>
 						<span class="pricing-item__feature">Pricing Feature</span>
-						<button class="pricing-item__button"> Order Now </button>
+						<a style="text-decoration: none;" href="http://google.com" target="_blank"
+							rel="noopener noreferrer"><button class="pricing-item__button"> Order Now </button></a>
 					</div>
 				</div>
 
 
 			</section>
 
-			<section class="contact">
+			<section id="contact" class="contact">
 				<h2 class="contact__headline">Contact Us</h2>
 				<h4 class="contact__text">Most calendars are designed for teams.
 					Slate is designed for freelancers</h4>
@@ -322,28 +330,30 @@
 									Georgia 12473 United States</span>
 							</div>
 
-							<div class="contact-contacts__item">
+							<a href="mailto:willie.jennings@example.com" class="contact-contacts__item">
 								<img src="img/contact us/mail.svg" alt="mail">
 								<span>willie.jennings@example.com</span>
-							</div>
+							</a>
 
-							<div class="contact-contacts__item">
+							<a href="tel:(843) 555-0130" class="contact-contacts__item">
 								<img src="img/contact us/mobile.svg" alt="mobile">
-								<a href="tel:(843) 555-0130">(843) 555-0130</a>
-							</div>
+								<span>(843) 555-0130</span>
+							</a>
 						</div>
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143494.86491623629!2d38.8346975935457!3d55.80873818252006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414b1c7e8e89e903%3A0x2489581359276ac7!2z0J7RgNC10YXQvtCy0L4t0JfRg9C10LLQviwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1452761646368"
 							width="519" height="440" class="contact-contacts__cart" src="" frameborder="0"></iframe>
 						<div class="contact-contacts__social">
-							<img src="img/contact us/twitter.svg" width="32" height="32" alt="twitter">
-							<img src="img/contact us/face.svg" width="32" height="32" alt="facebook">
-							<img src="img/contact us/linkedin.svg" width="32" height="32" alt="linkedin">
-						</div>
+							<a class="header-links__item" target="blank" href="https://twitter.com">
+								<img src="img/contact us/twitter.svg" alt="twitter" width="32" height="32"></a>
+							<a class="header-links__item" target="blank" href="https://facebook.com">
+								<img src="img/contact us/face.svg" alt="facebook" width="32" height="32"></a>
+							<a class="header-links__item" target="blank" href="https://linkedin.com">
+								<img src="img/contact us/linkedin.svg" alt="linkedin" width="32" height="32"></a>
+						</div </div>
+
+
 					</div>
-
-
-				</div>
 
 
 			</section>
@@ -351,12 +361,12 @@
 	</main>
 	<footer class="footer">
 		<nav class="footer__item">
-			<h3 href="#" class="footer__headline">Pages</h3>
-			<a href="#" class="footer__link">Home</a>
-			<a href="#" class="footer__link">Product</a>
-			<a href="#" class="footer__link">Pricing</a>
-			<a href="#" class="footer__link">About</a>
-			<a href="#" class="footer__link">Contact</a>
+			<h3 class="footer__headline">Pages</h3>
+			<a href="#home" class="footer__link">Home</a>
+			<a href="#product" class="footer__link">Product</a>
+			<a href="#pricing" class="footer__link">Pricing</a>
+			<a href="#about" class="footer__link">About</a>
+			<a href="#contact" class="footer__link">Contact</a>
 		</nav>
 
 		<div class="footer__item">
@@ -380,15 +390,18 @@
 
 
 		<div class="footer__contact">
-			<div> <img src="img/footer/Group 5.svg" alt="map"> <span>7480 Mockingbird Hill undefined </span> </div>
-			<div><img src="img/footer/mobile.svg" alt="tel"> <a href="tel:(239) 555-0108">(239) 555-0108</a> </div>
+			<a href="#contact"><img src="img/footer/Group 5.svg" alt="map"> <span>7480 Mockingbird Hill undefined
+				</span></a>
+			<a href="tel:(239) 555-0108"><img src="img/footer/mobile.svg" alt="tel"> <span> (239) 555-0108</span></a>
+
+
 			<div class="footer-links">
-				<a href="">
-					<img src="img/header/twitter.png" class="footer-links__item" alt="twitter" width="32" height="32"></a>
-				<a href="">
-					<img src="img/header/facebook.png" class="footer-links__item" alt="facebook" width="32" height="32"></a>
-				<a href="">
-					<img src="img/header/linkedin.png" class="footer-links__item" alt="linkedin" width="32" height="32"></a>
+				<a target="_blank" href="https://twitter.com">
+					<img src="img/header/twitter.svg" class="footer-links__item" alt="twitter" width="32" height="32"></a>
+				<a target="_blank" href="https://facebook.com">
+					<img src="img/header/facebook.svg" class="footer-links__item" alt="facebook" width="32" height="32"></a>
+				<a target="_blank" href="https://linkedin.com">
+					<img src="img/header/linkedin.svg" class="footer-links__item" alt="linkedin" width="32" height="32"></a>
 			</div>
 
 		</div>

@@ -132,3 +132,10 @@ table {
 button {
   border: none;
 }
+
+button:hover {
+  background-color: #000;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: white;
+}

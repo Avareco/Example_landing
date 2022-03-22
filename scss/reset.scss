@@ -124,4 +124,9 @@ table {
 }
 button{
 	border: none;
+	&:hover{
+		background-color: #000;
+		transition: 0.2s;
+		color: white;
+	}
 }
