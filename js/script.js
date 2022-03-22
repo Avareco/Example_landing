@@ -13,7 +13,11 @@ burger.addEventListener("click", e => {
 	burger.classList.toggle('active')
 	body.classList.toggle('lock')
 })
-
+menuItem.addEventListener("click", e => {
+	menu.classList.remove('active')
+	burger.classList.remove('active')
+	body.classList.remove('lock')
+})
 
 function handleTabletChange(e) {
 	if (!e.matches) {
