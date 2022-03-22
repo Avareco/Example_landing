@@ -1,3 +1,9 @@
+body.lock {
+	overflow: hidden;
+}
+#nav-bar {
+	transition: 0.3s;
+}
 .header {
 	height: 156px;
 	position: absolute;
@@ -36,20 +42,12 @@
 		margin-right: 24px;
 	}
 }
-#header-menu__toggle {
-	display: none;
-}
-#nav-bar {
-	width: 100%;
-	transition: top 0.3s;
-}
+
 @media (max-width: 991px) {
 	.header {
 		position: fixed;
-
 		width: 100%;
 		z-index: 2;
-
 		height: 78px;
 		justify-content: start;
 		align-items: center;
@@ -58,25 +56,6 @@
 		}
 	}
 
-	#header-menu__toggle:checked ~ .header-menu__btn > span {
-		transform: rotate(45deg);
-	}
-
-	#header-menu__toggle:checked ~ .header-menu__btn > span::before {
-		top: 0;
-		transform: rotate(0);
-	}
-
-	#header-menu__toggle:checked ~ .header-menu__btn > span::after {
-		top: 0;
-		transform: rotate(90deg);
-		width: 100%;
-	}
-
-	#header-menu__toggle:checked ~ .header-menu__box {
-		visibility: visible;
-		right: 0;
-	}
 	.header-menu {
 		&__btn {
 			position: absolute;
@@ -122,6 +101,21 @@
 			}
 		}
 
+		&__btn.active {
+			& > span {
+				transform: rotate(45deg);
+			}
+			& > span::before {
+				top: 0;
+				transform: rotate(0);
+			}
+			& > span::after {
+				top: 0;
+				transform: rotate(90deg);
+				width: 100%;
+			}
+		}
+
 		&__box {
 			display: block;
 			position: fixed;
@@ -139,6 +133,11 @@
 			box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
 			z-index: 1;
 			transition: 0.5s;
+
+			&.active {
+				visibility: visible;
+				right: 0;
+			}
 		}
 		&__item {
 			margin-right: 0px;

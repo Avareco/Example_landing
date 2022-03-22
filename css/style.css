@@ -237,6 +237,15 @@ a {
   letter-spacing: 0.2px;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
+#nav-bar {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .header {
   height: 156px;
   position: absolute;
@@ -289,16 +298,6 @@ a {
   margin-right: 24px;
 }
 
-#header-menu__toggle {
-  display: none;
-}
-
-#nav-bar {
-  width: 100%;
-  -webkit-transition: top 0.3s;
-  transition: top 0.3s;
-}
-
 @media (max-width: 991px) {
   .header {
     position: fixed;
@@ -314,25 +313,6 @@ a {
   }
   .header__logo {
     margin-left: 27px;
-  }
-  #header-menu__toggle:checked ~ .header-menu__btn > span {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  #header-menu__toggle:checked ~ .header-menu__btn > span::before {
-    top: 0;
-    -webkit-transform: rotate(0);
-            transform: rotate(0);
-  }
-  #header-menu__toggle:checked ~ .header-menu__btn > span::after {
-    top: 0;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    width: 100%;
-  }
-  #header-menu__toggle:checked ~ .header-menu__box {
-    visibility: visible;
-    right: 0;
   }
   .header-menu__btn {
     position: absolute;
@@ -379,6 +359,21 @@ a {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
+  .header-menu__btn.active > span {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .header-menu__btn.active > span::before {
+    top: 0;
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  .header-menu__btn.active > span::after {
+    top: 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    width: 100%;
+  }
   .header-menu__box {
     display: block;
     position: fixed;
@@ -397,6 +392,10 @@ a {
     z-index: 1;
     -webkit-transition: 0.5s;
     transition: 0.5s;
+  }
+  .header-menu__box.active {
+    visibility: visible;
+    right: 0;
   }
   .header-menu__item {
     margin-right: 0px;
@@ -519,7 +518,7 @@ a {
 }
 
 .features__box {
-  margin-top: 111px;
+  padding-top: 111px;
 }
 
 .features__headline {
@@ -691,7 +690,7 @@ a {
 }
 
 .activity {
-  margin-top: 269px;
+  padding-top: 269px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1239,7 +1238,7 @@ a {
 
 .contact__headline {
   text-align: center;
-  margin-top: 143px;
+  padding-top: 143px;
 }
 
 .contact__text {
