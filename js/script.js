@@ -19,17 +19,13 @@ menuItem.addEventListener("click", e => {
 	body.classList.remove('lock')
 })
 
-
-
 video.setAttribute('poster', 'img/screen-mobile.jpg')
-
 
 let prevScrollpos = window.pageYOffset;
 
 navBar.style.position = "fixed"
 window.onscroll = function () {
 	var currentScrollPos = window.pageYOffset;
-
 	if (prevScrollpos > currentScrollPos) {
 		navBar.style.top = "0";
 	} else {
@@ -37,12 +33,7 @@ window.onscroll = function () {
 		navBar.style.backgroundColor = "#333"
 	}
 	prevScrollpos = currentScrollPos;
-
-
-
 }
-
-
 
 let bool = true;
 videoBlock.addEventListener('click', target => {
@@ -56,7 +47,4 @@ videoBlock.addEventListener('click', target => {
 	}
 	console.log(bool)
 	play.classList.toggle('display-none')
-
-
-
 })
