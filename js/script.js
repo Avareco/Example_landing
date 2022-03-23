@@ -19,31 +19,29 @@ menuItem.addEventListener("click", e => {
 	body.classList.remove('lock')
 })
 
-function handleTabletChange(e) {
-
-	video.setAttribute('poster', 'img/screen-mobile.jpg')
 
 
-	let prevScrollpos = window.pageYOffset;
-
-	navBar.style.position = "fixed"
-	window.onscroll = function () {
-		var currentScrollPos = window.pageYOffset;
-
-		if (prevScrollpos > currentScrollPos) {
-			navBar.style.top = "0";
-		} else {
-			navBar.style.top = "-100%";
-			navBar.style.backgroundColor = "#333"
-		}
-		prevScrollpos = currentScrollPos;
+video.setAttribute('poster', 'img/screen-mobile.jpg')
 
 
+let prevScrollpos = window.pageYOffset;
 
+navBar.style.position = "fixed"
+window.onscroll = function () {
+	var currentScrollPos = window.pageYOffset;
+
+	if (prevScrollpos > currentScrollPos) {
+		navBar.style.top = "0";
+	} else {
+		navBar.style.top = "-100%";
+		navBar.style.backgroundColor = "#333"
 	}
+	prevScrollpos = currentScrollPos;
+
+
+
 }
-mediaQuery.addListener(handleTabletChange)
-handleTabletChange(mediaQuery)
+
 
 
 let bool = true;
